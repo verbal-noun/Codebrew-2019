@@ -1,28 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+
+import firebase from './firebase'
+import CapturePage from "./pages/CapturePage";
+
+
+//Can have a router component
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    state = {
+        signedIn: true
+    };
+
+    componentDidMount() {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                const {isAnonymous, uid} = user;
+                console.log(`There is a user detected. ${isAnonymous} ${uid}`);
+            } else {
+                console.log("User is not authenticated");
+                firebase.auth().signInAnonymously().catch((err) => {
+                    console.error("An error occured when signing in");
+                })
+            }
+        });
+    }
+
+    render() {
+        return (
+            <div>
+
+                <CapturePage/>
+
+            </div>
+        );
+    }
 }
 
 export default App;
