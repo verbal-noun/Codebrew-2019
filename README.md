@@ -1,6 +1,6 @@
 # Project Readme
 
-[logo](https://i.imgur.com/YjG0qKb.png)
+<img src="https://i.imgur.com/YjG0qKb.png" alt="Parkingo Logo"/>
 
 ## About
 This is a project part of the Codebrew 2019 competition.
