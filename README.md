@@ -1,3 +1,18 @@
+# Project Readme
+
+## About
+This is a project part of the Codebrew 2019 competition.
+
+## Pitch
+Parkingo focusses on the idea of demystifying the parking signs. It's an app where you can simply take a photo of a sign and let it tell you if you are allowed to park or not. 
+
+The app goes above and beyond by even suggesting cheap paid parking nearby as well as an SMS reminder when your parking time is about to be over.
+
+[logo]: https://trello-attachments.s3.amazonaws.com/5cb147abda4c006a586a3971/5cb163cbfab3ce3cceede46a/c6d786adfdc118f37661375b6a9534a2/logo.png
+
+
+# NPM Readme
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
