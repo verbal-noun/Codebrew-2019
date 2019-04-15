@@ -1,5 +1,6 @@
 # Project Readme
 
+[logo](https://i.imgur.com/YjG0qKb.png)
 
 ## About
 This is a project part of the Codebrew 2019 competition.
