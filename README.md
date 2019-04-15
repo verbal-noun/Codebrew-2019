@@ -1,8 +1,5 @@
 # Project Readme
 
-Inline-style: 
-![alt text](https://trelloattachments.s3.amazonaws.com/5cb147abda4c006a586a3971/5cb163cbfab3ce3cceede46a/c6d786adfdc118f37661375b6a9534a2/logo.png "Logo Title Text 1")
-
 
 ## About
 This is a project part of the Codebrew 2019 competition.
